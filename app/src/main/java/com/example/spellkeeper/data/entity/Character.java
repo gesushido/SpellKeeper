@@ -1,5 +1,6 @@
 package com.example.spellkeeper.data.entity;
 
+import androidx.room.Ignore;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -29,6 +30,7 @@ public class Character {
     }
 
     // Конструктор для удобного создания
+    @Ignore
     public Character(String name, String characterClass, int level) {
         this.name = name;
         this.characterClass = characterClass;
